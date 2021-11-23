@@ -10,6 +10,7 @@ class Hbridge_motors {
 	  Hbridge_motors(L298H* motor1, L298H* motor2);
 		void goToLeft();
 		void goToRight();
+		void setSpeed(byte speed);
 		void stop();
 		void goForward();
 		void goBackward();

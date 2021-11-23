@@ -23,7 +23,7 @@ void Hbridge_motors::goToRight() {
 	analogWrite(m2 -> enable,m2 -> speed);
 }
 
-void Hbridge_motors::goForward() {
+void Hbridge_motors::goBackward() {
 	digitalWrite(m1 -> pin1,HIGH);
 	digitalWrite(m1 -> pin2,LOW);
 	digitalWrite(m2 -> pin1,HIGH);
@@ -32,7 +32,7 @@ void Hbridge_motors::goForward() {
 	analogWrite(m2 -> enable,m2 -> speed);
 }
 
-void Hbridge_motors::goBackward() {
+void Hbridge_motors::goForward() {
 	digitalWrite(m1 -> pin1,LOW);
 	digitalWrite(m1 -> pin2,HIGH);
 	digitalWrite(m2 -> pin1,LOW);
@@ -48,4 +48,9 @@ void Hbridge_motors::stop() {
 	digitalWrite(m2 -> pin2,LOW);
 	analogWrite(m1 -> enable,0);
 	analogWrite(m2 -> enable,0);
+}
+
+void Hbridge_motors::setSpeed(byte speed) {
+	m1 -> speed = speed;
+	m2 -> speed = speed;
 }

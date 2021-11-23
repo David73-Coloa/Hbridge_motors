@@ -4,3 +4,4 @@ goBackward	KEYWORD2
 goToLeft	KEYWORD2
 goToRight	KEYWORD2
 stop	KEYWORD2
+setSpeed	KEYWORD2
