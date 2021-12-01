@@ -50,7 +50,7 @@ void Hbridge_motors::stop() {
 	analogWrite(m2 -> enable,0);
 }
 
-void Hbridge_motors::setSpeed(byte speed) {
-	m1 -> speed = speed;
-	m2 -> speed = speed;
+void Hbridge_motors::setSpeed(byte speedM1,byte speedM2) {
+	m1 -> speed = speedM1;
+	m2 -> speed = speedM2;
 }
