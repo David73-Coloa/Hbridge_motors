@@ -5,3 +5,6 @@ goToLeft	KEYWORD2
 goToRight	KEYWORD2
 stop	KEYWORD2
 setSpeed	KEYWORD2
+run             KEYWORD2 
+turnPin         KEYWORD2 
+
