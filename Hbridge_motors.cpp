@@ -1,6 +1,5 @@
 #include <Hbridge_motors.h>
-#define HIGH true
-#define LOW false
+
 Hbridge_motors::Hbridge_motors(L298H* motor1,L298H* motor2) {
   this -> m1 = motor1;
   this -> m2 = motor2;
